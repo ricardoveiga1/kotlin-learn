@@ -62,9 +62,10 @@ fun main() {
     println("Fernando != Fernando -> ${"Fernando" != "Fernando"}") // Retorna false (falso)
 
     // Tomar cuidado com comparação de Array
+    println("Comparação arrays")
     println(arrayOf(1, 2, 3).contentEquals(arrayOf(1, 2, 3))) // Maneira Certa
 
     val array1 = arrayOf(1, 2, 3)
     val array2 = arrayOf(1, 2, 3)
-    println(array1 == array2)
+    println(array1 == array2) // compara referencia de memóira, e não o array em si
 }

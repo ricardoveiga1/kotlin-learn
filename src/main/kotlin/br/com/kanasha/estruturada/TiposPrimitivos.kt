@@ -25,7 +25,8 @@ fun main() {
     val string = "Fernando"
 
     // Array
-    val array = arrayOf(0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
+    val array1: Array<Int> = arrayOf(0, 2,4)
+    val array = arrayOf(0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20)//posso usar sem o tipo de dado
 
     /* Por ser uma linguagem de tipagem estática, o Kotlin não deixa mudarmos uma variavel do tipo Boolean para o tipo Int
     var boolean3 = false

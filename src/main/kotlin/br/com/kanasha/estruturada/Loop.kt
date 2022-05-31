@@ -13,6 +13,7 @@ fun main() {
         precoTotal += preco
     }
     println("Preço Total: $precoTotal")
+
     // while
     var contador = 0
     precoTotal = BigDecimal.ZERO
@@ -21,6 +22,7 @@ fun main() {
         contador += 1
     }
     println("Preço Total: $precoTotal")
+
     // doWhile
     contador = 0
     precoTotal = BigDecimal.ZERO
