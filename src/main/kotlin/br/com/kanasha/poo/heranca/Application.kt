@@ -13,6 +13,7 @@ class Application {
 
             val calculadoraCientifica = CalculadoraCientifica()
             calculadoraCientifica.somar(BigDecimal(2))
+            calculadoraCientifica.somar(BigDecimal(2))
             calculadoraCientifica.potencia(8)
         }
     }

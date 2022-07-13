@@ -16,9 +16,10 @@ fun main() {
     println("dropNome: $dropNome")
     val containsNome = nome.contains('d') // Verifica se contem a letra d na palavra
     println("containsNome: $containsNome")
+
     // Array
     val array = arrayOf(31, 22, 31, 1, 5, 6, 84, 8, 3, 10)
-    val sumOfArray = array.sumOf { it }
+    val sumOfArray = array.sumOf { it } //soma todos valores do array, serve para Bigdecimal
     println("sumOfArray: $sumOfArray")
     val reverseArray = array.reversedArray()
     println("reverseArray: ${arrayToString(reverseArray)}")

@@ -1,7 +1,7 @@
 package br.com.kanasha.estruturada
 
 import kotlin.system.measureNanoTime
-
+// permite que um elemeto seja postado em uma coleção apenas uma vez, diferente de uma lista ou array
 fun main() {
     val hashSet = hashSetOf<Int>(1, 2, 3, 4) // HashSet
     val sortedSet = sortedSetOf<Int>(1, 2, 3, 4) // TreeSet

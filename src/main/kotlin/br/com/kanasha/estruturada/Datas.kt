@@ -40,6 +40,7 @@ fun main() {
     println(yesterdayTime.isAfter(yesterday.atStartOfDay()))
     println(date.after(yesterdayDate))
     // Comparação dia da semana
+    //retirando final de semana da conta, add 1 dia se sábado ou domingo
     while (yesterday.dayOfWeek == DayOfWeek.SUNDAY || yesterday.dayOfWeek == DayOfWeek.SATURDAY){
         yesterday = yesterday.plusDays(1)
     }

@@ -8,8 +8,10 @@ class Application {
         @JvmStatic
         fun main(args: Array<String>) {
             val calculadora = Calculadora()
-            calculadora.somar(BigDecimal.ONE)
-            calculadora.dividir(BigDecimal("50"))
+            //calculadora.somar(BigDecimal.ONE)
+            calculadora.somar(BigDecimal("50"))
+//            calculadora.subtrair((BigDecimal(2)))
+            calculadora.dividir(BigDecimal("10"))
         }
     }
 }

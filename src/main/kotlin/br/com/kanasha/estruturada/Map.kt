@@ -4,7 +4,7 @@ import kotlin.random.Random
 import kotlin.system.measureNanoTime
 
 fun main() {
-    val map1 = mapOf(
+    val map1 = mapOf<Int, String>(  //não necessita passar o tipo
         1 to "Muito Ruim",
         2 to "Ruim",
         3 to "Razoavel",
@@ -17,11 +17,13 @@ fun main() {
         3 to "Razoavel",
         4 to "Bom"
     )
-    mutable1[5] = "Muito Bom"
+    mutable1[5] = "Muito Bom"  //adicionando elemento ao map, método put[]
     println(map1[1])
     println(mutable1[1])
+
+
     // ==============================================================================
-    val listaCodigos = Array(100000) { Random.nextInt(1, 6) }
+    val listaCodigos = Array(100000) { Random.nextInt(1, 6) } // 1 inclusive e 6 exclusive
     val listMap = listOf(
         Pair(1, "Muito Ruim"),
         Pair(2, "Ruim"),

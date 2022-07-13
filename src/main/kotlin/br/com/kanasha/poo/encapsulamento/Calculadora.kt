@@ -13,25 +13,25 @@ class Calculadora {
 
     fun somar(a: BigDecimal){
         resultado += a
-        mostrarResultado()
+        getResultado()
     }
 
     fun subtrair(a: BigDecimal){
         resultado -= a
-        mostrarResultado()
+        getResultado()
     }
 
     fun multiplicar(a: BigDecimal){
         resultado *= a
-        mostrarResultado()
+        getResultado()
     }
 
     fun dividir(a: BigDecimal){
         resultado = resultado.divide(a, 8, RoundingMode.HALF_UP)
-        mostrarResultado()
+        getResultado()
     }
 
-    private fun mostrarResultado() {
+    private fun getResultado() {
         println("O resultado é: $resultado")
     }
 }

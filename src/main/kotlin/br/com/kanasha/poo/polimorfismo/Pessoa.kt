@@ -1,4 +1,4 @@
-package br.com.kanasha.poo.encapsulamentoII
+package br.com.kanasha.poo.polimorfismo
 
 import java.time.LocalDate
 //quando crio uma variável q não será alterada, crio com VAL
@@ -19,7 +19,13 @@ class Pessoa(
             field = value
         }
 
+    val animaisAdotados = mutableListOf<Animal>()
+
     fun falar(mensagem: String){
         println("$nome falou: $mensagem")
+    }
+
+    fun adotar(animal: Animal){
+        animaisAdotados.add(animal)
     }
 }
